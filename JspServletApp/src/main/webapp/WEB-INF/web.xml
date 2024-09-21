@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servlet_App_0</display-name>
+ <welcome-file-list>
+ 	<welcome-file>home.html</welcome-file>
+ </welcome-file-list>
+ <servlet>
+ 	<servlet-name>xyz</servlet-name>
+ 	<servlet-class>com.sushma.DateServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>xyz</servlet-name>
+ 	<url-pattern>/date</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ 	<servlet-name>logical1</servlet-name>
+ 	<servlet-class>com.sushma.RegisterServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>logical1</servlet-name>
+ 	<url-pattern>/register</url-pattern>
+ </servlet-mapping>
+ 
+ 
+  <servlet>
+ 	<servlet-name>logical2</servlet-name>
+ 	<servlet-class>com.sushma.UpdateServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>logical2</servlet-name>
+ 	<url-pattern>/update</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>logical3</servlet-name>
+ 	<servlet-class>com.sushma.SelectServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>logical3</servlet-name>
+ 	<url-pattern>/select</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ 	<servlet-name>logical4</servlet-name>
+ 	<servlet-class>com.sushma.SelectAllServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>logical4</servlet-name>
+ 	<url-pattern>/displayAll</url-pattern>
+ </servlet-mapping>
+ 
+</web-app>
